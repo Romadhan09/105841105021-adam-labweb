@@ -55,7 +55,7 @@ const App = () => {
     if (!dapatFont) {
       return <Text>Font tidak ditemukan......</Text>
     }
-    
+
   return (
     <View style ={styles.container}>
       <View style ={styles.content}>
@@ -66,7 +66,7 @@ const App = () => {
         }}>Silakan masukkan alamat email Anda. Anda akan menerima tautan untuk membuat kata sandi baru melalui email</Text>
         <View  style= {styles.form}>
           <TextInputCostum placeholder="Email" typekeyboard="email-address"/>
-          
+
           <View  style ={{
             justifyContent : 'flex-end',
             flexDirection : 'row',
@@ -82,7 +82,7 @@ const App = () => {
           <ButtonCostum text = "SEND" color = "#C40C0C"/>
         </View>
       </View>
-      
+
     </View>
   )
 }

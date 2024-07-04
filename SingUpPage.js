@@ -46,7 +46,7 @@ const ButtonCostum =({text,color}) => {
 }
 
 
-const App = () => {
+const App = ({navigation}) => {
   // export default function App() {
     const [dapatFont]= useFonts({
       'MetroBold': require('./assets/Fonts/Metropolis-Bold.otf'),
@@ -69,12 +69,7 @@ const App = () => {
             flexDirection : 'row',
             marginBottom : 10
           }}>
-            <Text style ={{
-              fontSize :15,
-              textAlign :'flex-end',
-              marginLeft :130,
-              fontFamily : 'MetroMedium'
-            }}>Already have an account?</Text>
+            <Text style={styles.logintext} onPress={() =>navigation.navigate('LoginPage')}>Already have an account?</Text>
           </View>
           <ButtonCostum text = "SING UP" color = "#C40C0C"/>
         </View>
@@ -137,4 +132,10 @@ const styles =StyleSheet.create({
     width : 30,
     height : 30
   },
+  logintext : {
+    fontSize :15,
+              textAlign :'flex-end',
+              marginLeft :130,
+              fontFamily : 'MetroMedium'
+  }
 });
