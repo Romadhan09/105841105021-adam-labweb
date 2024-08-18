@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 
-export default function Visual2() {
+export default function Visualsearch() {
     return (
         <View style={{ 
             flex: 1,
